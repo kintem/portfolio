@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Open+Sans:wght@300&display=swap");
+body h2, body h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  margin: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,19 +12,32 @@
 }
 
 body {
+  background-color: #f8f8f8;
+}
+
+body {
   font-family: "Open Sans", sans-serif;
   text-transform: lowercase;
+  text-align: center;
   color: #414141;
 }
 body h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
-  margin: 10px;
 }
 body span {
   color: #F65C78;
+}
+
+hr {
+  width: 30%;
+  border: none;
+  border-top: 2px solid #C3F584;
+  margin: 5px auto 30px;
+}
+
+.switch {
+  background-color: #FFD271;
 }
 
 .nav-section {
@@ -42,14 +61,33 @@ body span {
   color: #414141;
 }
 
-.switch {
-  background-color: green;
-}
-
 .header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 200px 0;
+  padding: 300px 0;
+}
+
+.projects-section {
+  background-color: #FFD271;
+  height: 550px;
+  margin-top: 100px;
+}
+.projects-section .projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: -30px auto;
+  position: absolute;
+  width: 80%;
+  left: 0;
+  right: 0;
+}
+.projects-section .projects__img {
+  width: 300px;
+  height: 300px;
+  background-color: #f8f8f8;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
