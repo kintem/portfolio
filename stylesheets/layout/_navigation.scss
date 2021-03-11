@@ -1,0 +1,28 @@
+.nav-section {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px;
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+    
+        .nav-list {
+            list-style-type: none;
+            width: 55%;
+            display: flex;
+            justify-content: space-between;
+
+            &__item a {
+                text-decoration: none;
+                color: $black;
+            }
+        }
+    }
+
+}
+
+.switch {
+    background-color: green;
+}
