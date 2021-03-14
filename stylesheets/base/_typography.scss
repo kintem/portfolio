@@ -4,10 +4,17 @@ body {
     text-align: center;
     color: $black;
 
-    h1 {
-        @extend %heading;
-        font-size: 3.5rem;
-        text-transform: uppercase;
+    header {
+        h1 {
+            @extend %heading;
+            font-size: 3.5rem;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-style: italic;
+        }
+
     }
 
     h2 {

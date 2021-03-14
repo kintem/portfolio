@@ -1,23 +1,41 @@
 .nav-section {
-    display: flex;
-    justify-content: flex-end;
+        display: flex;
+        justify-content: flex-end;
+        margin: 30px 20px;
+    
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        
+            .nav-list {
+                list-style-type: none;
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+    
+                &__item a {
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+          }
+    }
+
+@media screen and (min-width: 768px) {
+.nav-section {
     margin: 30px 40px;
 
     .nav {
-        display: flex;
-        justify-content: space-between;
-        width: 68.3%;
+        width: 75%;
     
         .nav-list {
-            list-style-type: none;
-            width: 55%;
-            display: flex;
-            justify-content: space-between;
+            width: 67%;
 
             &__item a {
-                text-decoration: none;
                 color: $black;
             }
         }
       }
+}
 }
