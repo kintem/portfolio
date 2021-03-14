@@ -24,4 +24,12 @@ body {
     span {
         color: $secondary-color;
     }
+
+    footer {
+        p {
+            @extend %heading;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+    }
 }
