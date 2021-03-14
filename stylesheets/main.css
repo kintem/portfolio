@@ -114,7 +114,7 @@ hr {
     width: 67%;
   }
   .nav-section .nav .nav-list__item a {
-    color: #414141;
+    color: #828282;
   }
 }
 .header {
@@ -130,6 +130,7 @@ hr {
 }
 .header p {
   margin-left: 9%;
+  color: #828282;
 }
 
 @media screen and (min-width: 768px) {
