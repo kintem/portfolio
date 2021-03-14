@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Open+Sans:wght@300&display=swap");
-body h2, body header h1 {
+body footer p, body h2, body header h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   margin: 10px 0;
@@ -30,6 +30,10 @@ body header p {
 }
 body span {
   color: #F65C78;
+}
+body footer p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
 }
 
 hr {
@@ -212,24 +216,24 @@ hr {
   width: 80%;
   margin: 0 auto;
 }
-.about-section .icons-container {
-  width: 70%;
+.about-section .skills-container {
+  width: 65%;
   margin: 30px auto;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.about-section .icons-container__icon {
+.about-section .skills-container__icon {
   font-size: 50px;
   color: #F65C78;
-  margin: 15px;
+  margin: 20px;
 }
 
 @media screen and (min-width: 768px) {
   .about-section__text {
     width: 60%;
   }
-  .about-section .icons-container {
+  .about-section .skills-container {
     width: 60%;
   }
 }
@@ -237,7 +241,7 @@ hr {
   .about-section__text {
     width: 50%;
   }
-  .about-section .icons-container {
+  .about-section .skills-container {
     width: 50%;
   }
 }
@@ -245,7 +249,53 @@ hr {
   .about-section__text {
     width: 35%;
   }
-  .about-section .icons-container {
+  .about-section .skills-container {
     width: 40%;
   }
+}
+.contact__title {
+  margin-top: 130px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFD271;
+  height: 500px;
+}
+.contact-container .form-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.contact-container .form-container .form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+}
+.contact-container .form-container .form__input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  background-color: #FFF3AF;
+}
+.contact-container .contact-icons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 65%;
+  margin: 0 auto;
+}
+.contact-container .contact-icons__icon {
+  font-size: 50px;
+  color: #414141;
+  margin: 10px 20px 40px;
+}
+
+footer {
+  background-color: #F65C78;
+  padding: 20px 0;
+  color: #f8f8f8;
 }

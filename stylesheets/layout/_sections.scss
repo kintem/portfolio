@@ -1,3 +1,4 @@
+//Projects
 .projects-section {
     background-color: $primary-color;
     height: 850px;
@@ -68,6 +69,8 @@
     }
 }
 
+
+//About
 .about-section {
     margin-top: 170px;
     line-height: 2;
@@ -77,8 +80,8 @@
         margin: 0 auto;
     }
 
-    .icons-container {
-        width: 70%;
+    .skills-container {
+        width: 65%;
         margin: 30px auto;
         display: flex;
         justify-content: space-evenly;
@@ -87,7 +90,7 @@
         &__icon {
             font-size: 50px;
             color: $secondary-color;
-            margin: 15px;
+            margin: 20px;
         }
     }
 }
@@ -98,7 +101,7 @@
             width: 60%;
         }
 
-        .icons-container {
+        .skills-container {
             width: 60%;
         }
     }
@@ -110,7 +113,7 @@
             width: 50%;
         }
 
-        .icons-container {
+        .skills-container {
             width: 50%;
         }
     }
@@ -122,8 +125,56 @@
             width: 35%;
         }
 
-        .icons-container {
+        .skills-container {
             width: 40%;
+        }
+    }
+}
+
+
+//Contact
+.contact__title {
+    margin-top: 130px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $primary-color;
+    height: 500px;
+
+    .form-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+
+         .form {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            align-items: center;
+
+            &__input {
+                width: 100%;
+                padding: 10px;
+                margin: 10px;
+                border: none;
+                background-color: $light-primary;
+            }
+        }
+    }  
+
+    .contact-icons {
+        display: flex;
+        justify-content: space-evenly;
+        width: 65%;
+        margin: 0 auto;
+
+        &__icon {
+            font-size: 50px;
+            color: $black;
+            margin: 10px 20px 40px;
         }
     }
 }
