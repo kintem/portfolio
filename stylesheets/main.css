@@ -204,20 +204,47 @@ hr {
   }
 }
 .about-section {
-  margin-top: 200px;
+  margin-top: 170px;
   line-height: 2;
 }
 .about-section__text {
-  width: 40%;
+  width: 80%;
   margin: 0 auto;
 }
 .about-section .icons-container {
-  width: 40%;
-  margin: 50px auto;
+  width: 70%;
+  margin: 30px auto;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .about-section .icons-container__icon {
   font-size: 50px;
   color: #F65C78;
+  margin: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-section__text {
+    width: 60%;
+  }
+  .about-section .icons-container {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .about-section__text {
+    width: 50%;
+  }
+  .about-section .icons-container {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-section__text {
+    width: 35%;
+  }
+  .about-section .icons-container {
+    width: 40%;
+  }
 }
