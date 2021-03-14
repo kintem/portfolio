@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 230px 0 260px;
+  text-align: left;
+}
+.header .name-container {
+  margin-left: 8%;
+}
+.header p {
+  margin-left: 9%;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 300px 0;
+    align-items: center;
+    text-align: center;
+  }
+  .header .name-container {
+    display: flex;
+    margin-left: 0;
+  }
+  .header p {
+    margin-left: 0;
+  }
+}
