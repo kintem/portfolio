@@ -1,0 +1,59 @@
+.about-section {
+    margin-top: 170px;
+    line-height: 2;
+
+    &__text {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .skills-container {
+        width: 65%;
+        margin: 30px auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        &__icon {
+            font-size: 50px;
+            color: $secondary-color;
+            margin: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about-section {
+        &__text {
+            width: 60%;
+        }
+
+        .skills-container {
+            width: 60%;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .about-section {
+        &__text {
+            width: 50%;
+        }
+
+        .skills-container {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .about-section {
+        &__text {
+            width: 35%;
+        }
+
+        .skills-container {
+            width: 40%;
+        }
+    }
+}

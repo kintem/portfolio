@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Open+Sans:wght@300&display=swap");
-body footer p, body h2, body header h1 {
+.form__submit, body footer p, body h2, body header h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   margin: 10px 0;
@@ -84,6 +84,18 @@ hr {
   -webkit-transform: translateX(22px);
   transform: translateX(22px);
   background-color: #828282;
+}
+
+.form__submit {
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: none;
+  background-color: #414141;
+  color: #f8f8f8;
+}
+.form__submit:hover {
+  background-color: #C3F584;
+  color: #414141;
 }
 
 .nav-section {
@@ -278,9 +290,13 @@ hr {
 .contact-container .form-container .form__input {
   width: 100%;
   padding: 10px;
-  margin: 10px;
   border: none;
   background-color: #FFF3AF;
+  font-family: "Open Sans", sans-serif;
+  text-transform: lowercase;
+}
+.contact-container .form-container .form__label {
+  color: #FFD271;
 }
 .contact-container .contact-icons {
   display: flex;
@@ -292,6 +308,9 @@ hr {
   font-size: 50px;
   color: #414141;
   margin: 10px 20px 40px;
+}
+.contact-container .contact-icons__icon:hover {
+  color: #F65C78;
 }
 
 @media screen and (min-width: 768px) {
